@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/output.css" />
+  </head>
+  <!-- <body class="bg-gradient-to-b from-red-600 to-purple-600 font-mono"> -->
+  <body class="font-sans">
+    <div
+      class="w-full h-12 bg-purple-500 dark:bg-slate-800 flex justify-end py-2 px-4"
+    >
+      <input type="checkbox" class="absolute hidden" id="toggle">
+      <label class="bg-white py-1 px-2 rounded-full dark:hidden" for="toggle">
+        <i class="fa-solid fa-moon"></i>
+      </label>
+      <label class="hidden bg-white py-1 px-2 rounded-full dark:inline-block" for="toggle">
+        <i class="fa-solid fa-sun"></i>
+      </label>
+    </div>
+    <div class="bg-white dark:bg-slate-600">
+      <div class="container px-3 flex justify-center items-center flex-col">
+        <div class="text-center mt-14">
+          <h1 class="text-3xl font-bold dark:text-white">
+            Front End Developer,<br />
+            UI/UX designer
+          </h1>
+          <h1 class="text-lg font-semibold dark:text-white">
+            I Front End Developer <br />
+            and UI/UX designer
+          </h1>
+          <div class="flex items-center justify-center mt-4 group">
+            <div
+              class="border p-4 rounded-full dark:border-none bg-purple-400 group-hover:bg-purple-600 duration-500 dark:bg-slate-700 dark:group-hover:bg-slate-400"
+            >
+              <img
+                src="./img/vodapermadi.png"
+                alt="picture-profile"
+                class="rounded-full bg-white border dark:border-none dark:bg-slate-600"
+                width="150"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="w-full mt-12 flex justify-center items-center dark:hidden">
+          <img
+            src="./img/svg-element.svg"
+            width="500"
+            alt="svg"
+            class="dark:bg-slate-600 rounded p-3"
+          />
+        </div>
+        <div class="w-full hidden dark:flex mt-12 justify-center items-center">
+          <img
+            src="./img/svg-element-2.svg"
+            width="500"
+            alt="svg"
+            class="dark:bg-slate-600 rounded p-3"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="bg-purple-600 dark:bg-gray-700">
+      <div class="flex justify-center items-center flex-col pt-20 pb-44">
+        <div class="flex mt-20">
+          <h1 class="text-4xl font-semibold text-stone-200 text-center">
+            Hai, I am Philipus Voda Permadi. Nice to meet you!!
+          </h1>
+        </div>
+        <div class="flex flex-row text-center mt-2 p-4">
+          <p class="p-3 bg-gray-300 rounded m-2 font-semibold text-xl">
+            the beginning of my journey <br />
+            was when my curiosity about the appearance of <br />
+            the website at school, when it was being held in the final test for
+            the 3rd grade of junior high school.
+          </p>
+          <p
+            class="py-4 px-3 text-center bg-gray-300 rounded m-2 font-semibold text-xl"
+          >
+            from that curiosity I started <br />
+            trying to explore what the components on the website ranging from
+            html to javascript
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center items-center px-3">
+      <div
+        class="container -mt-20 bg-gray-200 dark:bg-gray-400 flex justify-center rounded"
+      >
+        <div
+          class="md:flex md:flex-row sm:flex sm:flex-col text-center py-2 px-1"
+        >
+          <div
+            class="border-2 border-gray-400 dark:border-2 rounded-lg py-3 px-2 my-2"
+          >
+            <h1>Lorem, ipsum.</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              libero doloribus tempore minus numquam, in necessitatibus
+              aspernatur repellendus dignissimos repudiandae officia facilis
+              veniam quasi. Pariatur.
+            </p>
+          </div>
+          <div class="border-2 border-gray-400 rounded-lg my-2">
+            <h1>Lorem, ipsum.</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Praesentium tempora, beatae maxime minus repudiandae deserunt nemo
+              molestias sequi sed sit saepe voluptatibus nam ipsam esse.
+            </p>
+          </div>
+          <div class="border-2 border-gray-400 rounded-lg my-2">
+            <h1>Lorem, ipsum.</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores,
+              soluta enim. Quisquam id suscipit, vel alias quae perspiciatis
+              vero, nostrum vitae eveniet dicta, fuga illum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/657d253784.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const html = document.querySelector('html')
+      const toggle = document.querySelector('#toggle')
+
+      toggle.addEventListener('click',function(){
+        toggle.checked ? html.classList.add('dark') : html.classList.remove('dark')
+      })
+    </script>
+  </body>
+</html>
