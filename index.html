@@ -7,9 +7,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="dist/output.css" />
   </head>
-  <!-- <body class="bg-gradient-to-b from-red-600 to-purple-600 font-mono"> -->
-  <body class="font-sans">
-    <div
+  <body class="font-sans bg-white dark:bg-slate-500 duration-500">
+    <!-- Navbar -->
+
+    <nav
       class="w-full h-12 duration-500 bg-purple-500 dark:bg-slate-800 flex justify-end py-2 px-4"
     >
       <input type="checkbox" class="absolute hidden" id="toggle" />
@@ -25,11 +26,16 @@
       >
         <i class="fa-solid fa-sun"></i>
       </label>
-    </div>
-    <div class="bg-white dark:bg-slate-600 duration-500">
-      <div class="container px-3 flex justify-center items-center flex-col">
+    </nav>
+
+    <!-- Hero -->
+
+    <div class="">
+      <div class="px-3 flex justify-center items-center flex-col">
         <div class="text-center mt-14">
-          <h1 class="text-3xl font-bold dark:text-white">
+          <h1
+            class="text-3xl font-bold dark:text-white text-gray-900 selection:bg-gray-900 selection:text-gray-900 select-none"
+          >
             Front End Developer,<br />
             UI/UX designer
           </h1>
@@ -39,12 +45,12 @@
           </h1>
           <div class="flex items-center justify-center mt-4 group">
             <div
-              class="border p-4 rounded-full dark:border-none bg-purple-400 group-hover:bg-purple-600 duration-500 dark:bg-slate-700 dark:group-hover:bg-slate-400"
+              class="border mt-4 p-4 rounded-full dark:border-none bg-purple-400 hover:scale-110 group-hover:bg-purple-600 duration-500 dark:bg-slate-700 dark:group-hover:bg-slate-400"
             >
               <img
                 src="./img/vodapermadi.png"
                 alt="picture-profile"
-                class="rounded-full bg-white border dark:border-none dark:bg-slate-600"
+                class="rounded-full bg-white border dark:border-none dark:bg-slate-600 duration-500"
                 width="150"
               />
             </div>
@@ -63,27 +69,31 @@
             src="./img/svg-element-2.svg"
             width="500"
             alt="svg"
-            class="dark:bg-slate-600 duration-500 rounded p-3"
+            class="dark:bg-slate-500 duration-500 rounded p-3"
           />
         </div>
       </div>
     </div>
-    <div class="bg-purple-600 dark:bg-gray-700">
+
+    <!-- About -->
+
+    <div class="bg-purple-600 dark:bg-gray-800">
       <div class="flex justify-center items-center flex-col pt-20 pb-44">
         <div class="flex mt-20">
           <h1 class="text-4xl font-semibold text-stone-200 text-center">
-            Hai, I am Philipus Voda Permadi. Nice to meet you!!
+            Hai, I am Philipus Voda Permadi. <br />
+            Nice to meet you!!
           </h1>
         </div>
         <div class="flex flex-row text-center mt-2 p-4">
-          <p class="p-3 bg-gray-300 rounded m-2 font-semibold text-xl">
+          <p class="p-3 text-gray-900 bg-blue-200 hover:bg-blue-300 hover:duration-300 duration-300 dark:bg-gray-300 dark:hover:bg-gray-600 dark:hover:text-white rounded-lg m-2 font-semibold text-xl">
             the beginning of my journey <br />
             was when my curiosity about the appearance of <br />
             the website at school, when it was being held in the final test for
             the 3rd grade of junior high school.
           </p>
           <p
-            class="py-4 px-3 text-center bg-gray-300 rounded m-2 font-semibold text-xl"
+            class="py-4 px-3 text-gray-900 text-center bg-blue-200 hover:bg-blue-300 hover:duration-300 duration-300 dark:bg-gray-300 dark:hover:bg-gray-600 dark:hover:text-white rounded-lg m-2 font-semibold text-xl"
           >
             from that curiosity I started <br />
             trying to explore what the components on the website ranging from
@@ -92,39 +102,53 @@
         </div>
       </div>
     </div>
+
+    <!-- project -->
+
     <div class="flex justify-center items-center px-3">
       <div
-        class="container -mt-20 bg-gray-200 dark:bg-gray-400 flex justify-center rounded"
+        class="container -mt-20 bg-blue-200 dark:bg-gray-400 flex justify-center rounded"
       >
-        <div
-          class="md:flex md:flex-row sm:flex sm:flex-col text-center py-2 px-1"
-        >
+        <div class="flex flex-col justify-center items-center py-4">
+          <div>
+            <h1 class="text-4xl font-semibold py-4">Project</h1>
+          </div>
           <div
-            class="border-2 border-gray-400 dark:border-2 rounded-lg py-3 px-2 my-2"
+            class="flex flex-col text-center py-2 px-1"
           >
-            <h1>Lorem, ipsum.</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-              libero doloribus tempore minus numquam, in necessitatibus
-              aspernatur repellendus dignissimos repudiandae officia facilis
-              veniam quasi. Pariatur.
-            </p>
-          </div>
-          <div class="border-2 border-gray-400 rounded-lg my-2">
-            <h1>Lorem, ipsum.</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Praesentium tempora, beatae maxime minus repudiandae deserunt nemo
-              molestias sequi sed sit saepe voluptatibus nam ipsam esse.
-            </p>
-          </div>
-          <div class="border-2 border-gray-400 rounded-lg my-2">
-            <h1>Lorem, ipsum.</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores,
-              soluta enim. Quisquam id suscipit, vel alias quae perspiciatis
-              vero, nostrum vitae eveniet dicta, fuga illum.
-            </p>
+            <button
+              class="bg-purple-600 dark:bg-white text-slate-50 dark:text-slate-900 py-8 px-5 m-3 rounded transition hover:scale-110 ease-out duration-300"
+            >
+              <span>
+                <a
+                  href="https://vodapermadi.github.io/weather-app/"
+                  class="text-2xl font-semibold hover:underline-offset-2 hover:underline"
+                  >Weather App</a
+                >
+              </span>
+            </button>
+            <button
+              class="bg-purple-600 dark:bg-white py-8 px-5 m-3 rounded transition hover:scale-110 ease-out duration-300"
+            >
+              <span>
+                <a
+                  href="https://vodapermadi.github.io/weather-app/"
+                  class="text-2xl font-semibold hover:underline-offset-2 dark:text-slate-900 text-slate-50 hover:underline"
+                  >Colection Example Project</a
+                >
+              </span>
+            </button>
+            <button
+              class="bg-purple-600 text-slate-50 dark:text-slate-900 dark:bg-white py-8 px-5 m-3 rounded transition hover:scale-110 ease-out duration-300"
+            >
+              <span>
+                <a
+                  href="https://github.com/vodapermadi/Machine-Learning"
+                  class="text-2xl font-semibold hover:underline-offset-2 hover:underline"
+                  >Machine Learning</a
+                >
+              </span>
+            </button>
           </div>
         </div>
       </div>
